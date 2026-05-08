@@ -20,6 +20,7 @@
 #define BUFFER_SIZE 1024
 #define MAX_CAMPUS_NAME 50
 
+/* Structure to track connected campus clients and their session state */
 typedef struct {
   int socket;
   char campus_name[MAX_CAMPUS_NAME];
