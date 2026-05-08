@@ -1,3 +1,7 @@
+# ============================================================
+# Git Ignore Configuration for Campus Networking Project
+# ============================================================
+
 # Compiled Binaries
 server
 client
