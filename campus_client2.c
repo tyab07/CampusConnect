@@ -92,6 +92,8 @@ void *tcp_receiver(void *arg) {
   return NULL;
 }
 
+/* Periodically sends a UDP heartbeat to the server to announce campus presence
+ */
 void *udp_heartbeat_sender(void *arg) {
   struct sockaddr_in server_addr;
   char heartbeat_msg[BUFFER_SIZE];
