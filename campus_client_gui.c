@@ -437,6 +437,10 @@ static gboolean scroll_to_bottom(gpointer data) {
 /* ─────────────────────────────────────────────────────── */
 /*               ADD MESSAGE BUBBLE TO CHAT                */
 /* ─────────────────────────────────────────────────────── */
+/*
+ * Dynamically creates a styled message bubble widget (sent/received)
+ * and appends it to the chat container.
+ */
 static gboolean add_message_bubble(gpointer data) {
   Message *m = (Message *)data;
 
