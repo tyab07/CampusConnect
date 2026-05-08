@@ -53,6 +53,7 @@ void init_clients() {
   }
 }
 
+/* Verifies campus credentials against the server's local whitelist */
 int authenticate_client(char *campus, char *password) {
   for (int i = 0; i < num_credentials; i++)
     if (strcmp(valid_credentials[i].campus, campus) == 0 &&
