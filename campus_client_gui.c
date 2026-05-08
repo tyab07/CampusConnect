@@ -625,6 +625,10 @@ static void *udp_broadcast_receiver(void *arg) {
 /* ─────────────────────────────────────────────────────── */
 /*               GUI: SEND MESSAGE CALLBACK                */
 /* ─────────────────────────────────────────────────────── */
+/*
+ * Callback for the send button; extracts UI input,
+ * formats the protocol message, and sends it via TCP.
+ */
 static void on_send_clicked(GtkWidget *widget, gpointer data) {
   const char *msg_text = gtk_entry_get_text(GTK_ENTRY(msg_entry));
   if (strlen(msg_text) == 0)
