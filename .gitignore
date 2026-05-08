@@ -1,0 +1,24 @@
+# Compiled Binaries
+server
+client
+c1
+campus_client2
+campus_client_gui
+
+# Object files
+*.o
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Documentation/Media to ignore (optional, but keeps repo clean)
+*.mp4
+*.docx
+*.pkt
+.~lock.*
+
+# Temp files
+*~
+*.swp
+*.bak
