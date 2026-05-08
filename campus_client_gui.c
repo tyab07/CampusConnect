@@ -51,6 +51,8 @@ static int authenticated = 0;
 
 static Message messages[MAX_MESSAGES];
 static int msg_count = 0;
+/* Mutex to ensure thread-safe access to message history between network and GUI
+ * threads */
 static pthread_mutex_t msg_mutex = PTHREAD_MUTEX_INITIALIZER;
 
 static const char *departments[] = {"Admissions", "Academics", "IT", "Sports"};
